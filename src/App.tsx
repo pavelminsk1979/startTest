@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Typography} from "./components/typography";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+   <Typography variant={'large'}>Какойто произвольный текст</Typography>
+   <Typography variant={'h1'}>Какойто произвольный текст</Typography>
+   <Typography variant={'h2'}>Какойто произвольный текст</Typography>
+   <Typography variant={'h3'}>Какойто произвольный текст</Typography>
+   <Typography variant={'body1'}>Какойто произвольный текст</Typography>
+   <Typography variant={'body2'}>Какойто произвольный текст</Typography>
+   <Typography variant={'subtitle1'}>Какойто произвольный текст</Typography>
+   <Typography variant={'subtitle2'}>Какойто произвольный текст</Typography>
+   <Typography variant={'caption'}>Какойто произвольный текст</Typography>
+   <Typography variant={'overline'}>Какойто произвольный текст</Typography>
+   <Typography variant={'link1'}>Какойто произвольный текст</Typography>
+   <Typography variant={'link2'}>Какойто произвольный текст</Typography>
+   <Typography variant={'error'}>Какойто произвольный текст</Typography>
     </div>
   );
 }
