@@ -2,32 +2,44 @@ import { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react'
 
 import s from './typography.module.scss'
 
-export interface TextProps<T extends ElementType> {
+ type TextProps<T extends ElementType> = {
     as?: T
     variant?:
-        | 'large'
-        | 'h1'
-        | 'h2'
-        | 'h3'
-        | 'body1'
-        | 'body2'
-        | 'subtitle1'
-        | 'subtitle2'
-        | 'caption'
-        | 'overline'
-        | 'link1'
-        | 'link2'
-        | 'error'
+        | 'blockOrSectionName'
+        | 'titlePrimary'
+        | 'titleSecondary'
+        | 'headerPrimary'
+        | 'headerSecondary'
+        | 'subheaderPrimary'
+        | 'subheaderSecondary'
+        | 'typefaceMain'
+        | 'buttonS'
+        | 'buttonM'
+        | 'buttonL'
+        | 'titleAnyCads'
+        | 'BigLink'
+        | 'statisticsMore1M'
+        | 'tupefaceMainBold'
+        | 'smallText'
+        | 'smallLink'
+        | 'titleSideMenu'
     children?: ReactNode
     className?: string
 }
 
 export function Typography<T extends ElementType = 'p'>(
+
     props: TextProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof TextProps<T>>
 ) {
-    const { variant = 'body1', className, as: Component = 'p', ...rest } = props
+    const { variant = 'typefaceMain', className, as: Component = 'p', ...rest } = props
 
-    const classNames = `${s.text} ${s[variant]} ${className}`
+    const classNames = ` ${s[variant]} ${className}`
 
     return <Component className={classNames} {...rest} />
 }
+
+/* В props будут присутствовать все свойства из TextProps<T>: as, variant, children, className + свойства из ComponentPropsWithoutRef<T>,при этом
+  из ComponentPropsWithoutRef<T> удалены свойства 'as', 'variant', 'children' и 'className'.... впрочем свойств 'as', 'variant' внутри ComponentPropsWithoutRef<T> не было */
+
+/*
+as: Component = 'p' - это деструктуризация с присваиванием нового имени. Свойство as будет присвоено переменной Component, а если свойство as отсутствует в объекте props, переменной Component будет присвоено значение 'p'*/

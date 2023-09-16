@@ -6,21 +6,28 @@ function App() {
   return (
     <div >
      <div>
-      <Typography variant={'large'}>Какойто произвольный текст</Typography>
-      <Typography variant={'h1'}>Какойто произвольный текст</Typography>
-      <Typography variant={'h2'}>Какойто произвольный текст</Typography>
-      <Typography variant={'h3'}>Какойто произвольный текст</Typography>
-      <Typography variant={'body1'}>Какойто произвольный текст</Typography>
-      <Typography variant={'body2'}>Какойто произвольный текст</Typography>
-      <Typography variant={'subtitle1'}>Какойто произвольный текст</Typography>
-      <Typography variant={'subtitle2'}>Какойто произвольный текст</Typography>
-      <Typography variant={'caption'}>Какойто произвольный текст</Typography>
-      <Typography variant={'overline'}>Какойто произвольный текст</Typography>
-      <Typography variant={'link1'}>Какойто произвольный текст</Typography>
-      <Typography variant={'link2'}>Какойто произвольный текст</Typography>
-      <Typography variant={'error'}>Какойто произвольный текст</Typography>
+      <Typography variant={'blockOrSectionName'}>blockOrSectionName произвольный </Typography>
+      <Typography variant={'titlePrimary'}>titlePrimary произвольный текст</Typography>
+      <Typography variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
+      <Typography variant={'headerPrimary'}>headerPrimary произвольный текст</Typography>
+      <Typography variant={'headerSecondary'}>headerSecondary произвольный текст</Typography>
+      <Typography variant={'subheaderPrimary'}>subheaderPrimary произвольный текст</Typography>
+      <Typography variant={'subheaderSecondary'}>subheaderSecondary произвольный текст</Typography>
+      <Typography variant={'typefaceMain'}>typefaceMain произвольный текст</Typography>
+      <Typography variant={'buttonS'}>buttonS произвольный текст</Typography>
+      <Typography variant={'buttonM'}>buttonM произвольный текст</Typography>
+      <Typography variant={'buttonL'}>buttonL произвольный текст</Typography>
+      <Typography variant={'titleAnyCads'}>titleAnyCads произвольный текст</Typography>
+      <Typography variant={'BigLink'}>BigLink произвольный текст</Typography>
+      <Typography variant={'statisticsMore1M'}>statisticsMore1M произвольный текст</Typography>
+      <Typography variant={'tupefaceMainBold'}>tupefaceMainBold произвольный текст</Typography>
+      <Typography variant={'smallText'}>smallText произвольный текст</Typography>
+      <Typography variant={'smallLink'}>smallLink произвольный текст</Typography>
+      <Typography variant={'titleSideMenu'}>titleSideMenu произвольный текст</Typography>
      </div>
-     <div>
+     <Typography as="a" href="https://mail.ru/" target="_blank" variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
+     <Typography as="a" href="https://mail.ru/"  target="_blank" variant={'BigLink'}>BigLink произвольный текст</Typography>
+{/*     <div>
    <IncubatorTypography.H1 >Другой какойто произвольный текст</IncubatorTypography.H1>
    <IncubatorTypography.H2 >Другой какойто произвольный текст</IncubatorTypography.H2>
    <IncubatorTypography.H3 >Другой какойто произвольный текст</IncubatorTypography.H3>
@@ -36,7 +43,7 @@ function App() {
    <IncubatorTypography.Link >Другой какойто произвольный текст</IncubatorTypography.Link>
    <IncubatorTypography.Error >Другой какойто произвольный текст</IncubatorTypography.Error>
 
-     </div>
+     </div>*/}
     </div>
   );
 }
