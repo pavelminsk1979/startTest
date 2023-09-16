@@ -1,12 +1,12 @@
 import React from 'react';
 import {Typography} from "./components/myTypography/typography";
-import {IncubatorTypography} from "./components/incubatorTypography/incubatorTypography";
+
 
 function App() {
   return (
     <div >
      <div>
-      <Typography variant={'blockOrSectionName'}>blockOrSectionName произвольный </Typography>
+      <Typography variant={'blockOrSectionName'}>blockOrSectionName  </Typography>
       <Typography variant={'titlePrimary'}>titlePrimary произвольный текст</Typography>
       <Typography variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
       <Typography variant={'headerPrimary'}>headerPrimary произвольный текст</Typography>
