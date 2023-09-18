@@ -1,14 +1,17 @@
+$screen-size-small: 360px;
+$screen-size-average: 768px;
+
 @mixin typography($fontSize, $lineHeight, $fontWeight,$fontFamily) {
   margin: 0;
   font-size: $fontSize;
   line-height: $lineHeight;
   font-weight: $fontWeight;
   font-family:$fontFamily;
-  color: var(--color-text-primary);
+  color: black;
 }
 
 .blockOrSectionName {
-  @include typography(var(--font-size-megaPlus), var(--line-height-m),
+  @include typography(var(--font-size-megaXXL), var(--line-height-m),
           var(--font-weight-regular), var(--font-family-header));
 }
 
@@ -16,7 +19,6 @@
   @include typography(var(--font-size-mega), var(--line-height-m),
           var(--font-weight-regular), var(--font-family-header));
 }
-
 
 .titleSecondary {
   @include typography(var(--font-size-xxxl), var(--line-height-m),
@@ -35,16 +37,16 @@
 
 .subheaderPrimary {
   @include typography(var(--font-size-l), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+          var(--font-weight-regular), var(--font-family-text));
 }
 
 .subheaderSecondary {
   @include typography(var(--font-size-m), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+          var(--font-weight-regular), var(--font-family-text));
 }
 
 .typefaceMain {
-  @include typography(var(--font-size-s), var(--line-height-l),
+  @include typography(var(--font-size-s), var(--line-height-xl),
           var(--font-weight-regular), var(--font-family-text));
 }
 
@@ -65,33 +67,33 @@
 
 .titleAnyCads {
   @include typography(var(--font-size-xl), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+          var(--font-weight-regular), var(--font-family-header));
 }
 
 .BigLink {
-  @include typography(var(--font-size-s), var(--line-height-l),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-s), var(--line-height-xl),
+          var(--font-weight-regular), var(--font-family-header));
   cursor: pointer;
   text-decoration: underline;
 }
 
 .statisticsMore1M {
   @include typography(var(--font-size-xxl), var(--line-height-m),
-          var(--font-weight-regular),var(--font-family-text));
+          var(--font-weight-regular),var(--font-family-header));
 }
 
 .tupefaceMainBold {
-  @include typography(var(--font-size-s), var(--line-height-l),
+  @include typography(var(--font-size-s), var(--line-height-xl),
           var(--font-weight-bold),var(--font-family-text));
 }
 
 .smallText {
-  @include typography(var(--font-size-xs), var(--line-height-l),
+  @include typography(var(--font-size-xxs), var(--line-height-xl),
           var(--font-weight-regular),var(--font-family-text));
 }
 
 .smallLink {
-  @include typography(var(--font-size-xs), var(--line-height-l),
+  @include typography(var(--font-size-xxs), var(--line-height-xl),
           var(--font-weight-regular),var(--font-family-text));
   cursor: pointer;
   text-decoration: underline;
@@ -99,25 +101,62 @@
 
 
 .titleSideMenu {
-  @include typography(var(--font-size-xs), var(--line-height-l),
+  @include typography(var(--font-size-xxs), var(--line-height-xl),
           var(--font-weight-regular), var(--font-family-text));
 }
 
-.testTitlePrimary {
-  @include typography(var(--font-size-mega), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
-}
-.testTitlePrimaryNumber {
-  @include typography(var(--font-size-mega), var(--line-height-m),
-          var(--font-weight-bold), var(--font-family-header));
-}
-.testTitlePrimaryBold {
-  @include typography(var(--font-size-mega), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header-bold));
+
+
+
+@media screen and (max-width: $screen-size-average){
+  .blockOrSectionName{
+    @include typography(var(--font-size-megaXL), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .titlePrimary{
+    @include typography(var(--font-size-xxxl), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .titleSecondary,.headerPrimary, .headerSecondary{
+    @include typography(var(--font-size-xl), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .subheaderPrimary{
+    @include typography(var(--font-size-m), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-text));
+  }
+  .subheaderSecondary{
+    @include typography(var(--font-size-s), var(--line-height-xl),
+            var(--font-weight-regular), var(--font-family-text));
+  }
 }
 
 
 
+
+
+@media screen and (max-width: $screen-size-small){
+  .blockOrSectionName{
+    @include typography(var(--font-size-mega), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .titlePrimary{
+    @include typography(var(--font-size-xl), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .titleSecondary,.headerPrimary, .headerSecondary{
+    @include typography(var(--font-size-s), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .subheaderPrimary{
+    @include typography(var(--font-size-xs), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-text));
+  }
+  .subheaderSecondary{
+    @include typography(var(--font-size-xs), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-text));
+  }
+}
 
 
 

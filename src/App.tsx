@@ -6,30 +6,25 @@ function App() {
   return (
     <div >
      <div>
-      <Typography variant={'blockOrSectionName'}>blockOrSectionName  </Typography>
-      <Typography variant={'titlePrimary'}>titlePrimary произвольный текст</Typography>
-      <Typography variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
-      <Typography variant={'headerPrimary'}>headerPrimary произвольный текст</Typography>
-      <Typography variant={'headerSecondary'}>headerSecondary произвольный текст</Typography>
-      <Typography variant={'subheaderPrimary'}>subheaderPrimary произвольный текст</Typography>
-      <Typography variant={'subheaderSecondary'}>subheaderSecondary произвольный текст</Typography>
-      <Typography variant={'typefaceMain'}>typefaceMain произвольный текст</Typography>
-      <Typography variant={'buttonS'}>buttonS произвольный текст</Typography>
-      <Typography variant={'buttonM'}>buttonM произвольный текст</Typography>
-      <Typography variant={'buttonL'}>buttonL произвольный текст</Typography>
-      <Typography variant={'titleAnyCads'}>titleAnyCads произвольный текст</Typography>
-      <Typography variant={'BigLink'}>BigLink произвольный текст</Typography>
-      <Typography variant={'statisticsMore1M'}>statisticsMore1M произвольный текст</Typography>
-      <Typography variant={'tupefaceMainBold'}>tupefaceMainBold произвольный текст</Typography>
-      <Typography variant={'smallText'}>smallText произвольный текст</Typography>
-      <Typography variant={'smallLink'}>smallLink произвольный текст</Typography>
-      <Typography variant={'titleSideMenu'}>titleSideMenu произвольный текст</Typography>
+      <Typography colorText='gold'   variant={'blockOrSectionName'}>1BlockOrSectionName  </Typography>
+      <Typography  variant={'titlePrimary'}>2TitlePrimary</Typography>
+      <Typography variant={'titleSecondary'}>3TitleSecondary</Typography>
+      <Typography variant={'headerPrimary'}>4HeaderPrimary</Typography>
+      <Typography variant={'headerSecondary'}>5HeaderSecondary </Typography>
+      <Typography variant={'subheaderPrimary'}>6SubheaderPrimary </Typography>
+      <Typography variant={'subheaderSecondary'}>7SubheaderSecondary </Typography>
+      <Typography variant={'typefaceMain'}>8TypefaceMain </Typography>
+      <Typography variant={'buttonS'}>9ButtonS </Typography>
+      <Typography variant={'buttonM'}>10ButtonM </Typography>
+      <Typography variant={'buttonL'}>11ButtonL </Typography>
+      <Typography variant={'titleAnyCads'}>12TitleAnyCads </Typography>
+      <Typography variant={'BigLink'}>13BigLink </Typography>
+      <Typography variant={'statisticsMore1M'}>14StatisticsMore1M </Typography>
+      <Typography variant={'tupefaceMainBold'}>15TupefaceMainBold </Typography>
+      <Typography variant={'smallText'}>16SmallText </Typography>
+      <Typography variant={'smallLink'}>17SmallLink </Typography>
+      <Typography variant={'titleSideMenu'}>18TitleSideMenu </Typography>
      </div>
-     <Typography as="a" href="https://mail.ru/" target="_blank" variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
-     <Typography as="a" href="https://mail.ru/"  target="_blank" variant={'BigLink'}>BigLink произвольный текст</Typography>
-        <Typography variant={'testTitlePrimary'}>TESTtitlePrimary произвольный текст</Typography>
-        <Typography variant={'testTitlePrimaryNumber'}>TESTtitlePrimaryNunber произвольный текст</Typography>
-        <Typography variant={'testTitlePrimaryBold'}>TESTtitlePrimaryBold произвольный текст</Typography>
 {/*     <div>
    <IncubatorTypography.H1 >Другой какойто произвольный текст</IncubatorTypography.H1>
    <IncubatorTypography.H2 >Другой какойто произвольный текст</IncubatorTypography.H2>

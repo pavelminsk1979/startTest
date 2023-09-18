@@ -1,12 +1,10 @@
 :root {
   --font-family-header: Neutral Face;
-  --font-family-header-bold: Neutral Face Bold;
   --font-family-text:  Arial;
 
 
-
-  // font sizes
-  --font-size-xs: 10px;
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
   --font-size-s: 14px;
   --font-size-m: 16px;
   --font-size-l: 20px;
@@ -14,13 +12,17 @@
   --font-size-xxl: 28px;
   --font-size-xxxl: 32px;
   --font-size-mega: 40px;
-  --font-size-megaPlus: 80px;
+  --font-size-megaXL: 64px;
+  --font-size-megaXXL: 80px;
 
-  // line heights
+
   --line-height-m: 120%;
-  --line-height-l: 130%;
+  --line-height-xl: 130%;
 
-  // font weights
+
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+
+
+
 }
