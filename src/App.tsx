@@ -27,6 +27,9 @@ function App() {
      </div>
      <Typography as="a" href="https://mail.ru/" target="_blank" variant={'titleSecondary'}>titleSecondary произвольный текст</Typography>
      <Typography as="a" href="https://mail.ru/"  target="_blank" variant={'BigLink'}>BigLink произвольный текст</Typography>
+        <Typography variant={'testTitlePrimary'}>TESTtitlePrimary произвольный текст</Typography>
+        <Typography variant={'testTitlePrimaryNumber'}>TESTtitlePrimaryNunber произвольный текст</Typography>
+        <Typography variant={'testTitlePrimaryBold'}>TESTtitlePrimaryBold произвольный текст</Typography>
 {/*     <div>
    <IncubatorTypography.H1 >Другой какойто произвольный текст</IncubatorTypography.H1>
    <IncubatorTypography.H2 >Другой какойто произвольный текст</IncubatorTypography.H2>

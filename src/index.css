@@ -17,6 +17,11 @@ code {
 }
 
 @font-face {
+  font-family: 'Neutral Face Bold';
+  src: url('fonts/NeutralFaceBold.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Arial';
   src: url('fonts/arialmt.ttf') format('truetype');
 }

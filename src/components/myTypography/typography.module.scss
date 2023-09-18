@@ -17,6 +17,7 @@
           var(--font-weight-regular), var(--font-family-header));
 }
 
+
 .titleSecondary {
   @include typography(var(--font-size-xxxl), var(--line-height-m),
           var(--font-weight-regular), var(--font-family-header));
@@ -100,6 +101,19 @@
 .titleSideMenu {
   @include typography(var(--font-size-xs), var(--line-height-l),
           var(--font-weight-regular), var(--font-family-text));
+}
+
+.testTitlePrimary {
+  @include typography(var(--font-size-mega), var(--line-height-m),
+          var(--font-weight-regular), var(--font-family-header));
+}
+.testTitlePrimaryNumber {
+  @include typography(var(--font-size-mega), var(--line-height-m),
+          var(--font-weight-bold), var(--font-family-header));
+}
+.testTitlePrimaryBold {
+  @include typography(var(--font-size-mega), var(--line-height-m),
+          var(--font-weight-regular), var(--font-family-header-bold));
 }
 
 

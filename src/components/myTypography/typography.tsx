@@ -23,6 +23,9 @@ import s from './typography.module.scss'
         | 'smallText'
         | 'smallLink'
         | 'titleSideMenu'
+     |'testTitlePrimary'
+        |'testTitlePrimaryNumber'
+        |'testTitlePrimaryBold'
     children?: ReactNode
     className?: string
 }
