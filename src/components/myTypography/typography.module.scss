@@ -1,5 +1,6 @@
 $screen-size-small: 360px;
 $screen-size-average: 768px;
+$letter-spacing:var(--size-letter-spacing);
 
 @mixin typography($fontSize, $lineHeight, $fontWeight,$fontFamily) {
   margin: 0;
@@ -7,6 +8,7 @@ $screen-size-average: 768px;
   line-height: $lineHeight;
   font-weight: $fontWeight;
   font-family:$fontFamily;
+  letter-spacing:$letter-spacing;
   color: black;
 }
 
@@ -129,6 +131,22 @@ $screen-size-average: 768px;
     @include typography(var(--font-size-s), var(--line-height-xl),
             var(--font-weight-regular), var(--font-family-text));
   }
+  .typefaceMain,.buttonS,.buttonM,.buttonL{
+    @include typography(var(--font-size-xs), var(--line-height-xl),
+            var(--font-weight-regular), var(--font-family-text));
+  }
+  .titleAnyCads,.BigLink,.statisticsMore1M{
+    @include typography(var(--font-size-m), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .tupefaceMainBold{
+    @include typography(var(--font-size-xs), var(--line-height-xl),
+            var(--font-weight-bold),var(--font-family-text));
+  }
+  .smallText,.smallLink,.titleSideMenu {
+    @include typography(var(--font-size-xxs), var(--line-height-xl),
+            var(--font-weight-regular),var(--font-family-text));
+  }
 }
 
 
@@ -155,6 +173,22 @@ $screen-size-average: 768px;
   .subheaderSecondary{
     @include typography(var(--font-size-xs), var(--line-height-m),
             var(--font-weight-regular), var(--font-family-text));
+  }
+  .typefaceMain,.buttonS,.buttonM,.buttonL{
+    @include typography(var(--font-size-xxs), var(--line-height-xl),
+            var(--font-weight-regular), var(--font-family-text));
+  }
+  .titleAnyCads,.BigLink,.statisticsMore1M{
+    @include typography(var(--font-size-xs), var(--line-height-m),
+            var(--font-weight-regular), var(--font-family-header));
+  }
+  .tupefaceMainBold{
+    @include typography(var(--font-size-xxs), var(--line-height-xl),
+            var(--font-weight-bold),var(--font-family-text));
+  }
+  .smallText,.smallLink,.titleSideMenu {
+    @include typography(var(--font-size-xxxs), var(--line-height-xl),
+            var(--font-weight-regular),var(--font-family-text));
   }
 }
 
