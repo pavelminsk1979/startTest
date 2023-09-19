@@ -1,194 +1,161 @@
 $screen-size-small: 360px;
 $screen-size-average: 768px;
-$letter-spacing:var(--size-letter-spacing);
 
-@mixin typography($fontSize, $lineHeight, $fontWeight,$fontFamily) {
+
+
+@mixin typography($fontSize,$fontFamily) {
   margin: 0;
   font-size: $fontSize;
-  line-height: $lineHeight;
-  font-weight: $fontWeight;
-  font-family:$fontFamily;
-  letter-spacing:$letter-spacing;
+  font-family: $fontFamily;
+  line-height:var(--line-height-m) ;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--size-letter-spacing);
   color: black;
 }
 
 .blockOrSectionName {
-  @include typography(var(--font-size-megaXXL), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+  @include typography(var(--font-size-megaXXL), var(--font-family-header));
 }
 
 .titlePrimary {
-  @include typography(var(--font-size-mega), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+  @include typography(var(--font-size-mega), var(--font-family-header));
 }
 
 .titleSecondary {
-  @include typography(var(--font-size-xxxl), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+  @include typography(var(--font-size-xxxl),  var(--font-family-header));
 }
 
 .headerPrimary {
-  @include typography(var(--font-size-xxxl), var(--line-height-m),
-          var(--font-weight-regular),var(--font-family-header));
+  @include typography(var(--font-size-xxxl), var(--font-family-header));
 }
 
 .headerSecondary {
-  @include typography(var(--font-size-xl), var(--line-height-m),
-          var(--font-weight-regular),var(--font-family-header));
+  @include typography(var(--font-size-xl), var(--font-family-header));
 }
 
 .subheaderPrimary {
-  @include typography(var(--font-size-l), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-l), var(--font-family-text));
 }
 
 .subheaderSecondary {
-  @include typography(var(--font-size-m), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-m), var(--font-family-text));
 }
 
 .typefaceMain {
-  @include typography(var(--font-size-s), var(--line-height-xl),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-s), var(--font-family-text));
+  line-height: var(--line-height-xl)
 }
 
 .buttonS {
-  @include typography(var(--font-size-s), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-s), var(--font-family-text));
 }
 
 .buttonM {
-  @include typography(var(--font-size-m), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-m), var(--font-family-text));
 }
 
 .buttonL {
-  @include typography(var(--font-size-l), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-l), var(--font-family-text));
 }
 
 .titleAnyCads {
-  @include typography(var(--font-size-xl), var(--line-height-m),
-          var(--font-weight-regular), var(--font-family-header));
+  @include typography(var(--font-size-xl), var(--font-family-header));
 }
 
 .BigLink {
-  @include typography(var(--font-size-s), var(--line-height-xl),
-          var(--font-weight-regular), var(--font-family-header));
+  @include typography(var(--font-size-s), var(--font-family-header));
   cursor: pointer;
   text-decoration: underline;
+  line-height: var(--line-height-xl)
 }
 
 .statisticsMore1M {
-  @include typography(var(--font-size-xxl), var(--line-height-m),
-          var(--font-weight-regular),var(--font-family-header));
+  @include typography(var(--font-size-xxl), var(--font-family-header));
 }
 
 .tupefaceMainBold {
-  @include typography(var(--font-size-s), var(--line-height-xl),
-          var(--font-weight-bold),var(--font-family-text));
+  @include typography(var(--font-size-s), var(--font-family-text));
+  line-height: var(--line-height-xl);
+  font-weight:var(--font-weight-bold)
 }
 
 .smallText {
-  @include typography(var(--font-size-xxs), var(--line-height-xl),
-          var(--font-weight-regular),var(--font-family-text));
+  @include typography(var(--font-size-xxs), var(--font-family-text));
+  line-height: var(--line-height-xl)
 }
 
 .smallLink {
-  @include typography(var(--font-size-xxs), var(--line-height-xl),
-          var(--font-weight-regular),var(--font-family-text));
+  @include typography(var(--font-size-xxs), var(--font-family-text));
   cursor: pointer;
   text-decoration: underline;
+  line-height: var(--line-height-xl)
 }
 
 
 .titleSideMenu {
-  @include typography(var(--font-size-xxs), var(--line-height-xl),
-          var(--font-weight-regular), var(--font-family-text));
+  @include typography(var(--font-size-xxs), var(--font-family-text));
+  line-height: var(--line-height-xl)
 }
 
 
-
-
-@media screen and (max-width: $screen-size-average){
-  .blockOrSectionName{
-    @include typography(var(--font-size-megaXL), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+@media screen and (max-width: $screen-size-average) {
+  .blockOrSectionName {
+    @include typography(var(--font-size-megaXL), var(--font-family-header));
   }
-  .titlePrimary{
-    @include typography(var(--font-size-xxxl), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titlePrimary {
+    @include typography(var(--font-size-xxxl), var(--font-family-header));
   }
-  .titleSecondary,.headerPrimary, .headerSecondary{
-    @include typography(var(--font-size-xl), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titleSecondary, .headerPrimary, .headerSecondary {
+    @include typography(var(--font-size-xl), var(--font-family-header));
   }
-  .subheaderPrimary{
-    @include typography(var(--font-size-m), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-text));
+  .subheaderPrimary {
+    @include typography(var(--font-size-m), var(--font-family-text));
   }
-  .subheaderSecondary{
-    @include typography(var(--font-size-s), var(--line-height-xl),
-            var(--font-weight-regular), var(--font-family-text));
+  .subheaderSecondary {
+    @include typography(var(--font-size-s), var(--font-family-text));
   }
-  .typefaceMain,.buttonS,.buttonM,.buttonL{
-    @include typography(var(--font-size-xs), var(--line-height-xl),
-            var(--font-weight-regular), var(--font-family-text));
+  .typefaceMain, .buttonS, .buttonM, .buttonL {
+    @include typography(var(--font-size-xs), var(--font-family-text));
   }
-  .titleAnyCads,.BigLink,.statisticsMore1M{
-    @include typography(var(--font-size-m), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titleAnyCads, .BigLink, .statisticsMore1M {
+    @include typography(var(--font-size-m), var(--font-family-header));
   }
-  .tupefaceMainBold{
-    @include typography(var(--font-size-xs), var(--line-height-xl),
-            var(--font-weight-bold),var(--font-family-text));
+  .tupefaceMainBold {
+    @include typography(var(--font-size-xs), var(--font-family-text));
   }
-  .smallText,.smallLink,.titleSideMenu {
-    @include typography(var(--font-size-xxs), var(--line-height-xl),
-            var(--font-weight-regular),var(--font-family-text));
+  .smallText, .smallLink, .titleSideMenu {
+    @include typography(var(--font-size-xxs), var(--font-family-text));
   }
 }
 
 
-
-
-
-@media screen and (max-width: $screen-size-small){
-  .blockOrSectionName{
-    @include typography(var(--font-size-mega), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+@media screen and (max-width: $screen-size-small) {
+  .blockOrSectionName {
+    @include typography(var(--font-size-mega), var(--font-family-header));
   }
-  .titlePrimary{
-    @include typography(var(--font-size-xl), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titlePrimary {
+    @include typography(var(--font-size-xl), var(--font-family-header));
   }
-  .titleSecondary,.headerPrimary, .headerSecondary{
-    @include typography(var(--font-size-s), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titleSecondary, .headerPrimary, .headerSecondary {
+    @include typography(var(--font-size-s), var(--font-family-header));
   }
-  .subheaderPrimary{
-    @include typography(var(--font-size-xs), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-text));
+  .subheaderPrimary {
+    @include typography(var(--font-size-xs), var(--font-family-text));
   }
-  .subheaderSecondary{
-    @include typography(var(--font-size-xs), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-text));
+  .subheaderSecondary {
+    @include typography(var(--font-size-xs), var(--font-family-text));
   }
-  .typefaceMain,.buttonS,.buttonM,.buttonL{
-    @include typography(var(--font-size-xxs), var(--line-height-xl),
-            var(--font-weight-regular), var(--font-family-text));
+  .typefaceMain, .buttonS, .buttonM, .buttonL {
+    @include typography(var(--font-size-xxs), var(--font-family-text));
   }
-  .titleAnyCads,.BigLink,.statisticsMore1M{
-    @include typography(var(--font-size-xs), var(--line-height-m),
-            var(--font-weight-regular), var(--font-family-header));
+  .titleAnyCads, .BigLink, .statisticsMore1M {
+    @include typography(var(--font-size-xs), var(--font-family-header));
   }
-  .tupefaceMainBold{
-    @include typography(var(--font-size-xxs), var(--line-height-xl),
-            var(--font-weight-bold),var(--font-family-text));
+  .tupefaceMainBold {
+    @include typography(var(--font-size-xxs), var(--font-family-text));
   }
-  .smallText,.smallLink,.titleSideMenu {
-    @include typography(var(--font-size-xxxs), var(--line-height-xl),
-            var(--font-weight-regular),var(--font-family-text));
+  .smallText, .smallLink, .titleSideMenu {
+    @include typography(var(--font-size-xxxs), var(--font-family-text));
   }
 }
 

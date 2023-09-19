@@ -25,6 +25,8 @@ function App() {
       <Typography variant={'smallLink'}>17SmallLink </Typography>
       <Typography variant={'titleSideMenu'}>18TitleSideMenu </Typography>
      </div>
+        <div>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2</div>
+            <Typography colorText='blue' as="a" href="https://mail.ru/" target="_blank" variant={'titleSecondary'}>titleSecondary ссылка на почту </Typography>
 {/*     <div>
    <IncubatorTypography.H1 >Другой какойто произвольный текст</IncubatorTypography.H1>
    <IncubatorTypography.H2 >Другой какойто произвольный текст</IncubatorTypography.H2>
