@@ -1,0 +1,28 @@
+.frame{
+  height: 30px;
+  width: 400px;
+  border: 1px solid black;
+
+}
+.tabTrigger {
+  padding: 6px 24px;
+  border-radius: 3px;
+  border: 1px solid gold;
+  background-color: transparent;
+
+  &:focus-visible { /*использование кнопки Tab*/
+    outline: 1px solid blueviolet;
+  }
+
+  &:hover {
+    background: #dfdddd;
+  }
+}
+
+.active {
+  padding: 6px 24px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}

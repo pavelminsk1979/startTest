@@ -1,10 +1,12 @@
 import React from 'react';
 import {Typography} from "./components/myTypography/typography";
+import {AdminMenuMiddle} from "./components/admin-menu-middle/adminMenuMiddle";
 
 
 function App() {
   return (
     <div >
+        <AdminMenuMiddle/>
      <div>
       <Typography colorText='gold'   variant={'blockOrSectionName'}>1BlockOrSectionName  </Typography>
       <Typography  variant={'titlePrimary'}>2TitlePrimary</Typography>
